@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" 
+            fx:controller="org.example.controller.ContactController">
+
+    <center>
+        <TableView fx:id="contactTable">
+            <columns>
+                <TableColumn fx:id="idColumn" text="Id"/>
+                <TableColumn fx:id="nameColumn" text="Nombre"/>
+                <TableColumn fx:id="phoneColumn" text="Teléfono"/>
+                <TableColumn fx:id="emailColumn" text="Email"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Añadir" onAction="#addContact"/>
+            <Button text="Editar" onAction="#editContact"/>
+            <Button text="Eliminar" onAction="#deleteContact"/>
+            <Button text="Actualizar" onAction="#updateTable"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>

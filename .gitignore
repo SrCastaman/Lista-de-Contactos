@@ -1,5 +1,25 @@
-# Ignore Gradle project-specific cache directory
-.gradle
+# Gradle specific
+.gradle/
+build/
 
-# Ignore Gradle build output directory
-build
+# Distribution folders
+dist/
+runtime/
+
+# Compiled class files
+*.class
+
+# JAR and EXE files
+*.jar
+*.exe
+
+# IDE-specific files (si usas VS Code o Eclipse)
+.vscode/
+*.iml
+*.classpath
+*.project
+.settings/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
